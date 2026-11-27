@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug proctest (gdb)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/proctest",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "preLaunchTask": "build",
+      "linux": {
+        "miDebuggerPath": "/usr/bin/gdb"
+      },
+      "windows": {
+        "program": "${workspaceFolder}/build/proctest.exe",
+        "miDebuggerPath": "C:/w64devkit/bin/gdb.exe"
+      }
+    }
+  ]
+}
